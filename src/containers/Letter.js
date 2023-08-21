@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LetterWrapper = styled.div`
-    width: 65%;
+    width: 87%;
     background-color: white;
     padding: 2rem;
     border-style: solid;
@@ -20,7 +20,23 @@ const Text = styled.div`
     
 `;
 
+const Signatures = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: auto;
+`;
+
 const Signature = styled.div`
+    .name {
+        color: black;
+        font-family: 'Nothing You Could Do';
+    }
+    .title {
+        color: black;
+        font-family: 'Lalezar';
+    }
 `;
 
 const Letter = () => {
@@ -33,7 +49,10 @@ const Letter = () => {
                 <p style={{margin: 0}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p style={{margin: 0}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </Text>
-            <Signature></Signature>
+            <Signatures>
+                <Signature><div className='name'>First Last</div><div className='title'>Editor in Chief</div></Signature>
+                <Signature><div className='name'>First Last</div><div className='title'>Managing Editor</div></Signature>
+            </Signatures>
         </LetterWrapper>
     );    
 };

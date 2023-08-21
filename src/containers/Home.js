@@ -23,11 +23,16 @@ const HomeContainer = styled.div`
     width: 100%;
 	height: 100%;
 
-    background-image: radial-gradient(#3589C7 30%, #AFE1ED 20%);
+    background-image: radial-gradient(#3589C7 40%, #AFE1ED 50%);
     background-size: .5rem .5rem;
+`;
 
+const TopWrapper = styled.div`
     display: flex;
-    
+    justify-content: space-around;
+    padding-top: 3rem;
+    width: 90%;
+    margin-left: 2rem;
 `;
 
 const Photo = styled.div`
@@ -37,18 +42,18 @@ const Title = styled.div`
     font-family: 'Lalezar';
     color: #FFC85F;
     -webkit-text-stroke: 0.3rem black;
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: -0.2rem;
     transform: rotate(5deg);
     margin-top: 5rem;
 `;
 
 const Breakout = styled.div`
-    width: 30%;
-    height: 160%;
+    width: 43%;
+    height: 190%;
     position: absolute;
-    top: -1rem;
-    right: 5rem;
+    top: -2rem;
+    right: -5rem;
 `;
 
 const TitleWrapper = styled.div`
@@ -57,21 +62,24 @@ const TitleWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-    width: 70%;
+    width: 55%;
 `;
 
 const Home = () => {
 
     return (
         <HomeContainer>
-            <Photo><img src={HomeImage}></img></Photo>
-            <Wrapper>
-                <TitleWrapper>
-                    <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
-                    <Title>Welcome to Columbia!</Title>
-                </TitleWrapper>
-                <Letter/>
-            </Wrapper>
+            <TopWrapper>
+                <Photo><img src={HomeImage}></img></Photo>
+                <Wrapper>
+                    <TitleWrapper>
+                        <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
+                        <Title>Welcome to Columbia!</Title>
+                    </TitleWrapper>
+                    <Letter/>
+                </Wrapper>
+            </TopWrapper>
+            <div></div>
         </HomeContainer>
     );
 };
