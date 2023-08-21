@@ -8,16 +8,37 @@ const LetterWrapper = styled.div`
     border-style: solid;
     border-width: 0.2rem;
     border-color: black;
+
+    @media only screen and (max-width: 1024px){
+        width: 70%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 63%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
 `;
 
 const Title = styled.div`
     font-family: 'Mogra';
     font-size: 2rem;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 1.2rem;
+    }
 `;
 
 const Text = styled.div`
     font-family: "Comic Sans MS";
     
+    @media only screen and (max-width: 767px) {
+        font-size: 0.75rem;
+    }
 `;
 
 const Signatures = styled.div`
@@ -26,16 +47,31 @@ const Signatures = styled.div`
     justify-content: space-between;
     width: 40%;
     margin-left: auto;
+
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+        margin-top: 1rem;
+        margin-right: -1.5rem;
+    }
 `;
 
 const Signature = styled.div`
     .name {
         color: black;
         font-family: 'Nothing You Could Do';
+
+        @media only screen and (max-width: 767px) {
+            font-size: 0.75rem;
+            text-align: center;
+        }
     }
     .title {
         color: black;
         font-family: 'Lalezar';
+
+        @media only screen and (max-width: 767px) {
+            font-size: 0.75rem;
+        }
     }
 `;
 

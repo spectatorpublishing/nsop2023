@@ -33,9 +33,29 @@ const TopWrapper = styled.div`
     padding-top: 3rem;
     width: 90%;
     margin-left: 2rem;
+
+    @media only screen and (max-width: 1023px) {
+        display:none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        display:none;
+    }
+`;
+
+const MobileTopWrapper = styled.div`
+    padding-top: 3rem;
+
+    @media only screen and (min-width: 1024px) {
+        display:none;
+    }
 `;
 
 const Photo = styled.div`
+    @media only screen and (max-width: 1024px){
+        width: 70%;
+        padding-left: 1rem;
+    }
 `;
 
 const Title = styled.div`
@@ -46,6 +66,24 @@ const Title = styled.div`
     letter-spacing: -0.2rem;
     transform: rotate(5deg);
     margin-top: 5rem;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 5rem;
+        transform: rotate(0deg);
+        -webkit-text-stroke: 0.2rem black;
+        letter-spacing: -0.1rem;
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 2rem;
+        transform: rotate(0deg);
+        -webkit-text-stroke: 0.1rem black;
+        letter-spacing: -0.1rem;
+        margin-top: 0rem;
+        text-align: center;
+    }
 `;
 
 const Breakout = styled.div`
@@ -54,6 +92,27 @@ const Breakout = styled.div`
     position: absolute;
     top: -2rem;
     right: -5rem;
+
+    @media only screen and (max-width: 1024px) {
+        width: 25%;
+        height: 130%;
+        top: -1.5rem;
+        right: 0rem;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 30%;
+        height: 160%;
+        top: -1rem;
+        right: 1rem;
+    }
+
+    @media only screen and (max-width: 375px) {
+        width: 30%;
+        height: 160%;
+        top: -1rem;
+        right: 0rem;
+    }
 `;
 
 const TitleWrapper = styled.div`
@@ -79,7 +138,14 @@ const Home = () => {
                     <Letter/>
                 </Wrapper>
             </TopWrapper>
-            <div></div>
+            <MobileTopWrapper>
+                <TitleWrapper>
+                    <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
+                    <Title>Welcome to Columbia!</Title>
+                </TitleWrapper>
+                <Photo><img style={{width:"100%", height: "100%"}} src={HomeImage}></img></Photo>
+                <Letter/>
+            </MobileTopWrapper>
         </HomeContainer>
     );
 };
