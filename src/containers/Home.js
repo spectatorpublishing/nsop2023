@@ -2,6 +2,7 @@ import { React} from 'react';
 import styled from 'styled-components';
 import Letter from '../containers/Letter';
 import breakout from '../components/images/Breakout.png'
+import HomeImage from '../components/images/TestImage.png'
 
 const HomeContainer = styled.div`
     /* --dotSize: 0.25rem;
@@ -19,11 +20,14 @@ const HomeContainer = styled.div`
     background-size: var(--bgSize) var(--bgSize);
     background-position: 0 0, var(--bgPosition) var(--bgPosition); */
 
-    width: 100vw;
-	height: 100vh;
+    width: 100%;
+	height: 100%;
 
     background-image: radial-gradient(#3589C7 30%, #AFE1ED 20%);
     background-size: .5rem .5rem;
+
+    display: flex;
+    
 `;
 
 const Photo = styled.div`
@@ -33,34 +37,41 @@ const Title = styled.div`
     font-family: 'Lalezar';
     color: #FFC85F;
     -webkit-text-stroke: 0.3rem black;
-    font-size: 6rem;
+    font-size: 5.5rem;
     letter-spacing: -0.2rem;
     transform: rotate(5deg);
+    margin-top: 5rem;
 `;
 
 const Breakout = styled.div`
     width: 30%;
-    height: 150%;
+    height: 160%;
     position: absolute;
-    right: -3rem;
+    top: -1rem;
+    right: 5rem;
+`;
+
+const TitleWrapper = styled.div`
+    position: relative;
+    width: 100%;
 `;
 
 const Wrapper = styled.div`
-    position: relative;
-    width: 60%;
+    width: 70%;
 `;
 
 const Home = () => {
 
     return (
         <HomeContainer>
-            <Photo><img></img></Photo>
-
+            <Photo><img src={HomeImage}></img></Photo>
             <Wrapper>
-                <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
-                <Title>Welcome to Columbia!</Title>
+                <TitleWrapper>
+                    <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
+                    <Title>Welcome to Columbia!</Title>
+                </TitleWrapper>
+                <Letter/>
             </Wrapper>
-            <Letter/>
         </HomeContainer>
     );
 };

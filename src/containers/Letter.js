@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LetterWrapper = styled.div`
-    width: 50%;
+    width: 65%;
     background-color: white;
     padding: 2rem;
     border-style: solid;
