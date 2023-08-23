@@ -1,6 +1,7 @@
 import { React} from 'react';
 import styled from 'styled-components';
 import Letter from '../containers/Letter';
+import Credits from '../containers/Credits';
 import breakout from '../components/images/Breakout.png'
 import HomeImage from '../components/images/TestImage.png'
 
@@ -66,9 +67,9 @@ const Photo = styled.div`
     }
 
     @media only screen and (max-width: 450px){
+        margin: 0rem;
         margin-top: -3rem;
         width: 60%;
-        padding-left: 1rem;
     }
 `;
 
@@ -120,7 +121,7 @@ const Title = styled.div`
     }
 
     @media only screen and (max-width: 450px) {
-        font-size: 2rem;
+        font-size: 1.6rem;
         transform: rotate(0deg);
         -webkit-text-stroke: 0.1rem black;
         letter-spacing: -0.1rem;
@@ -154,8 +155,7 @@ const Breakout = styled.div`
         width: 40%;
         height: 160%;
         top: -1rem;
-        margin-left: auto;
-        right: -0.5rem;
+        right: -1rem;
     }
 `;
 
@@ -194,6 +194,7 @@ const Home = () => {
                 <Photo><img style={{width:"100%", height: "100%"}} src={HomeImage}></img></Photo>
                 <Letter/>
             </MobileTopWrapper>
+            <Credits/>
         </HomeContainer>
     );
 };
