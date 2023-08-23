@@ -76,6 +76,9 @@ const SectAndNames = styled.div`
     height: 60rem;
     margin: auto;
     margin-top: 2rem;
+    @media only screen and (max-width: 1129px){
+        height: 70rem;
+    }
     @media only screen and (max-width: 1024px){
         height: 100rem;
     }

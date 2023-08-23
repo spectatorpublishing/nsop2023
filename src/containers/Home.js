@@ -46,23 +46,27 @@ const TopWrapper = styled.div`
 
 const MobileTopWrapper = styled.div`
     padding-top: 3rem;
-
-
     @media only screen and (min-width: 1024px) {
         display:none;
     }
 `;
 
 const Photo = styled.div`
+    @media only screen and (max-width: 1300px) {
+        margin-top: 3rem;
+        width: 40%;
+        height: 100%;
+    }
+
     @media only screen and (max-width: 1023px) {
         margin-top: -8rem;
-        width: 70%;
+        width: 50%;
         padding-left: 1rem;
     }
 
     @media only screen and (max-width: 768px){
         margin-top: -7rem;
-        width: 60%;
+        width: 50%;
         padding-left: 1rem;
     }
 
@@ -177,7 +181,7 @@ const Home = () => {
     return (
         <HomeContainer>
             <TopWrapper>
-                <Photo><img src={HomeImage}></img></Photo>
+                <Photo><img src={HomeImage} style={{width:"100%", height: "100%"}}></img></Photo>
                 <Wrapper>
                     <TitleWrapper>
                         <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>

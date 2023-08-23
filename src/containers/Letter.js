@@ -9,6 +9,10 @@ const LetterWrapper = styled.div`
     border-width: 0.2rem;
     border-color: black;
 
+    @media only screen and (max-width: 1024px) and (min-width: 1300px){
+        width: 70%;
+    }
+
     @media only screen and (max-width: 1024px){
         width: 70%;
         margin-left: 1rem;
