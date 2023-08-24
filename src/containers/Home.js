@@ -181,7 +181,6 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            
             <TopWrapper>
                 <Photo><img src={HomeImage} style={{width:"100%", height: "100%"}}></img></Photo>
                 <Wrapper>
@@ -198,9 +197,10 @@ const Home = () => {
                     <Title>Welcome to Columbia!</Title>
                 </TitleWrapper>
                 <Photo><img style={{width:"100%", height: "100%"}} src={HomeImage}></img></Photo>
+                <Navbar className = 'mobile'/>
                 <Letter/>
             </MobileTopWrapper>
-            <Navbar/>
+            <Navbar className = 'desktop'/>
             <Credits/>
         </HomeContainer>
     );

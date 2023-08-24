@@ -12,6 +12,15 @@ const NavWrapper = styled.div`
    a {
         text-decoration: none;
     }
+    .desktop{
+        @media only screen and (max-width: 1023px){
+            display: none;
+            margin-top: 20rem;
+        }
+    }
+    @media only screen and (max-width: 1023px){
+        margin-top: -15rem;
+    }
 `;
 
 const VertNav = styled.div`
@@ -19,6 +28,10 @@ const VertNav = styled.div`
     margin-left: auto;
     position: relative;
     text-align: center;
+    
+    @media only screen and (max-width: 1023px){
+        transform: scale(0.8)
+    }
 `;
 
 const SectionList = styled.div`
@@ -44,10 +57,10 @@ const NavText = styled.div`
     font-style: normal;
 `;
 
-const NavBar = ({isSection}) => {
+const NavBar = ({className}) => {
     return(
         <NavWrapper>
-            <VertNav>
+            <VertNav className = {`${className}`}>
                 <img src={bubble} style={{height: "20rem"}}></img>
                 <SectionList>
                     {sections.map((section, index) => (

@@ -13,17 +13,19 @@ const LetterWrapper = styled.div`
         width: 70%;
     }
 
-    @media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 1023px){
         width: 70%;
         margin-left: 1rem;
-        margin-top: 1rem;
+        margin-top: -4rem;
+        margin-bottom: 17rem;
         padding-bottom: 1rem;
     }
 
     @media only screen and (max-width: 767px) {
         width: 63%;
         margin-left: 1rem;
-        margin-top: 1rem;
+        margin-top: -4rem;
+        margin-bottom: 17rem;
         padding-bottom: 1rem;
     }
 `;
