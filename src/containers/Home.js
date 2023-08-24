@@ -4,6 +4,7 @@ import Letter from '../containers/Letter';
 import Credits from '../containers/Credits';
 import breakout from '../components/images/Breakout.png'
 import HomeImage from '../components/images/TestImage.png'
+import Navbar from '../components/Navbar';
 
 const HomeContainer = styled.div`
     /* --dotSize: 0.25rem;
@@ -180,6 +181,7 @@ const Home = () => {
 
     return (
         <HomeContainer>
+            
             <TopWrapper>
                 <Photo><img src={HomeImage} style={{width:"100%", height: "100%"}}></img></Photo>
                 <Wrapper>
@@ -198,6 +200,7 @@ const Home = () => {
                 <Photo><img style={{width:"100%", height: "100%"}} src={HomeImage}></img></Photo>
                 <Letter/>
             </MobileTopWrapper>
+            <Navbar/>
             <Credits/>
         </HomeContainer>
     );
