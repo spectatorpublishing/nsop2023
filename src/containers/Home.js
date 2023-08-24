@@ -5,25 +5,17 @@ import Credits from '../containers/Credits';
 import breakout from '../components/images/Breakout.png'
 import HomeImage from '../components/images/TestImage.png'
 import Navbar from '../components/Navbar';
+import homeimage from '../components/images/HomeBackground.png'
 
 const HomeContainer = styled.div`
-    /* --dotSize: 0.25rem;
-    --bgSize: 1.35rem;
-    --bgPosition: calc(var(--bgSize) / 2);
-	
-	width: 100vw;
-	height: 100vh;
-	
-	background-image: radial-gradient(
-      circle at center,
-      #3589C7 var(--dotSize),
-      #AFE1ED 0
-    ), radial-gradient(circle at center, #3589C7 var(--dotSize), #AFE1ED 0);
-    background-size: var(--bgSize) var(--bgSize);
-    background-position: 0 0, var(--bgPosition) var(--bgPosition); */
-
     width: 100%;
 	height: 100%;
+
+    /* IMAGE FROM FIGMA -- looks a lil wonky on mobile*/
+    /* background-image: url(${homeimage});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #AFE1ED; */
 
     background-image: radial-gradient(#3589C7 40%, #AFE1ED 50%);
     background-size: .5rem .5rem;
