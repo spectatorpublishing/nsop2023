@@ -5,18 +5,10 @@ import Credits from '../containers/Credits';
 import breakout from '../components/images/Breakout.png'
 import HomeImage from '../components/images/TestImage.png'
 import Navbar from '../components/Navbar';
-import homeimage from '../components/images/HomeBackground.png'
 
 const HomeContainer = styled.div`
     width: 100%;
 	height: 100%;
-
-    /* IMAGE FROM FIGMA -- looks a lil wonky on mobile*/
-    /* background-image: url(${homeimage});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #AFE1ED; */
-
     background-image: radial-gradient(#3589C7 40%, #AFE1ED 50%);
     background-size: .5rem .5rem;
 `;
@@ -45,28 +37,23 @@ const MobileTopWrapper = styled.div`
 `;
 
 const Photo = styled.div`
-    @media only screen and (max-width: 1300px) {
-        margin-top: 3rem;
-        width: 40%;
-        height: 100%;
-    }
-
-    @media only screen and (max-width: 1023px) {
-        margin-top: -8rem;
-        width: 50%;
-        padding-left: 1rem;
+    width: 40%;
+    height: 100%;
+    margin-left:1rem;
+    @media only screen and (max-width: 1024px){
+        width:60%;
+        margin-top:2rem;
     }
 
     @media only screen and (max-width: 768px){
-        margin-top: -7rem;
-        width: 50%;
-        padding-left: 1rem;
+        margin-top: 2rem;
+        width: 80%;
     }
 
-    @media only screen and (max-width: 450px){
+    @media only screen and (max-width: 425px){
         margin: 0rem;
-        margin-top: -3rem;
-        width: 60%;
+        margin-left: 1rem;
+        width: 80%;
     }
 `;
 
@@ -92,15 +79,8 @@ const Title = styled.div`
         padding-left: 2rem;
     }
 
-    @media only screen and (max-width: 1072px) {
-        font-size: 2.6rem;
-        -webkit-text-stroke: 0.1rem black;
-        letter-spacing: -0.1rem;
-        padding-left: 2rem;
-    }
-
     @media only screen and (max-width: 1023px) {
-        font-size: 5rem;
+        font-size: 4.5rem;
         transform: rotate(0deg);
         -webkit-text-stroke: 0.2rem black;
         letter-spacing: -0.1rem;
@@ -117,8 +97,8 @@ const Title = styled.div`
         text-align: center;
     }
 
-    @media only screen and (max-width: 450px) {
-        font-size: 1.6rem;
+    @media only screen and (max-width: 425px) {
+        font-size: 2.2rem;
         transform: rotate(0deg);
         -webkit-text-stroke: 0.1rem black;
         letter-spacing: -0.1rem;
@@ -154,6 +134,18 @@ const Breakout = styled.div`
         top: -1rem;
         right: -1rem;
     }
+    @media only screen and (max-width: 600px) {
+        width: 8rem;
+        height: 8rem;
+        top: -2rem;
+        right: 0rem;
+    }
+    @media only screen and (max-width: 425px) {
+        width: 8rem;
+        height: 8rem;
+        top: -2rem;
+        right: 0rem;
+    }
 `;
 
 const TitleWrapper = styled.div`
@@ -169,12 +161,39 @@ const Wrapper = styled.div`
     width: 55%;
 `;
 
+const JoinSpec = styled.img`
+    display:block;
+    margin:auto;
+    margin-top:5rem;
+    width:60%;
+    @media only screen and (max-width: 1024px) {
+        display:none;
+    }
+`
+
+const JoinSpecMobile = styled.img`
+    display:block;
+    position:relative;
+    margin:auto;
+    width:90%;
+    margin-top:5rem;
+    @media only screen and (max-width: 767px) {
+        margin-top:0rem;
+        top:-10rem;
+    }
+    @media only screen and (min-width: 1023px) {
+        display:none;
+    }
+`
+
 const Home = () => {
 
     return (
+        <div>
+        <Navbar className = 'desktop'/>
         <HomeContainer>
             <TopWrapper>
-                <Photo><img src={HomeImage} style={{width:"100%", height: "100%"}}></img></Photo>
+                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OFLS3CGM6BHPXMRW5DASIFS55A.png" style={{width:"100%", height: "100%"}}></img></Photo>
                 <Wrapper>
                     <TitleWrapper>
                         <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
@@ -183,18 +202,19 @@ const Home = () => {
                     <Letter/>
                 </Wrapper>
             </TopWrapper>
+            <JoinSpec src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JAIANPQPBRCS5KZ76FBCKTGLGI.png"></JoinSpec>
             <MobileTopWrapper>
                 <TitleWrapper>
                     <Breakout><img src={breakout} width="100%" height="100%" ></img></Breakout>
                     <Title>Welcome to Columbia!</Title>
                 </TitleWrapper>
-                <Photo><img style={{width:"100%", height: "100%"}} src={HomeImage}></img></Photo>
-                <Navbar className = 'mobile'/>
+                <Photo><img style={{width:"100%", height: "100%"}} src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OFLS3CGM6BHPXMRW5DASIFS55A.png"></img></Photo>
                 <Letter/>
+                <JoinSpecMobile src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JAIANPQPBRCS5KZ76FBCKTGLGI.png"></JoinSpecMobile>
             </MobileTopWrapper>
-            <Navbar className = 'desktop'/>
             <Credits/>
         </HomeContainer>
+        </div>
     );
 };
 
