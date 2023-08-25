@@ -1,25 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import bubble from '../components/images/NavbarBubble.png'
-import {sections} from '../data/mocksections';
+import {sections} from '../data/sections';
 import { NavHashLink } from 'react-router-hash-link';
 
 const NavWrapper = styled.div`
    z-index: 1000;
    position: sticky;
-   top: 0;
    margin-top: -20rem;
    a {
         text-decoration: none;
     }
-    .desktop{
-        @media only screen and (max-width: 1023px){
-            display: none;
-            margin-top: 20rem;
+   top:17rem;
+    .section{
+        @media only screen and (max-width: 425px){
+            top: -5rem;
         }
-    }
-    @media only screen and (max-width: 1023px){
-        margin-top: -15rem;
+        
     }
 `;
 
@@ -29,8 +26,8 @@ const VertNav = styled.div`
     position: relative;
     text-align: center;
     
-    @media only screen and (max-width: 1023px){
-        transform: scale(0.8)
+    @media only screen and (max-width: 600px){
+        transform: scale(0.75);
     }
 `;
 
