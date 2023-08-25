@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { credits } from '../data/mockcredits'
+import { credits } from '../data/credits'
 
 const CreditsContainer = styled.div`
     width: 100%;
     height: 100%;
+    margin-top:10rem;
+    @media only screen and (max-width: 768px){
+        margin-top:0;
+    }
 `;
 
 const SlantContainer = styled.div`
@@ -51,20 +55,23 @@ const Header = styled.div`
     margin-left: 3rem;
     @media only screen and (max-width: 768px){
         -webkit-text-stroke: 0.1rem black;
-        font-size: 2.8rem;
+        font-size: 2rem;
         width: fit-content;
         margin: auto;
-        padding-top: 0.5rem;
+        padding-top:5rem;
+        padding-bottom:3rem;
     }
     @media only screen and (max-width: 450px){
+        text-align:center;
         -webkit-text-stroke: 0.05rem black;
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: fit-content;
         margin: auto;
-        padding-top: 0.5rem;
+        padding-top:5rem;
+        padding-bottom:1rem;
     }
     @media only screen and (max-width: 350px){
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 `;
 
@@ -90,7 +97,7 @@ const SectAndNames = styled.div`
         font-size: 1.2rem;
         height: fit-content;
         margin: auto;
-        width: 60%;
+        width: 70%;
     }
     @media only screen and (max-width: 450px){
         display: block;
@@ -107,8 +114,10 @@ const Section = styled.div`
     font-family: 'Mogra';
     color: white;
     text-transform: uppercase;
+    font-size: 1rem;
     @media only screen and (min-width: 769px){
         width: 30%;
+        font-size:1rem;
     }
 `;
 
@@ -135,10 +144,10 @@ const Credits = () => {
                             <br/>
                             {key.map((person, index) => {
                                 return(
-                                    <Name key={index}>{person.staff_name}, {person.title}</Name>
+                                    <Name key={index}>{person.staff_name}, <i>{person.title}</i></Name>
                                 );
                             })}
-                            <br/>
+                            <br/> <br/>
                             </Section>
                         );
                     })}
