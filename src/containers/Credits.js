@@ -155,7 +155,6 @@ const Credits = () => {
             </Wrapper>
         </CreditsContainer>
     );
-
 }
 
 export default Credits
