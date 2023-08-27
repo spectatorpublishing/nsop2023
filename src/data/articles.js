@@ -1,54 +1,18 @@
 // Mock data to define articles to be passed into each section page
 export const ac_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2023/02/05/review-black-in-babylon-where-is-the-line-between-exploitation-and-education/",
-      "article_title": "Review: Black in Babylon",
-      "article_authors": "Rachel Shaw",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NCH2VL37QVGCDMOIWPE7S6Z54U.jpeg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2023/02/03/new-society-of-black-artists-established/",
-      "article_title": "Columbia's Society of Black Artists has first general body meeting",
-      "article_authors": "Sinziana Stanciu",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EPONC22NZJBDRLOC7IEKJ5CTEU.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/16/im-not-going-to-let-outside-opinions-dictate-my-life-laina-dawes-on-connection-community-and-catharsis-in-hardcore-music/",
-      "article_title": "Laina Dawes- Lecturer, ethnomusicologist, heavy metal artist",
-      "article_authors": "Madison Rosenfield",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HKCTTBWHGNGR7JN3EHZHAVFAUI.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/08/retail-royalty-harlem-haberdashery-fashions-history/",
-      "article_title": "Harlem Haberdashery- Black owned West Harlem fashion co. Jay-Z is a frequent customer",
-      "article_authors": "Lucia A.",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UK3XFSZBW5ERRHGD42JGFJSUNM.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/13/meet-maguette-camara-and-mangue-sylla-inspiring-joy-in-barnards-african-dance-courses-for-nearly-20-years/",
-      "article_title": "Meet Maguette Camara and Mangue Sylla: inspiring joy in Barnard’s African dance courses for nearly 20 years",
-      "article_authors": "Lucy Kudlinski",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WN4J5KN2XBHQTFXQNV2P535JSM.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/10/review-saint-omer-presents-motherhood-as-mystery-not-intrigue/",
-      "article_title": "Review: ‘Saint Omer’ presents motherhood as mystery, not intrigue",
-      "article_authors": "Bella Pechaty",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LNXBBDCMENCXJGZE6PXCTF6EZU.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/13/candice-hoyes-law-04-defies-genre-with-civic-themes-and-fluid-musical-motifs/",
-      "article_title": "Candice Hoyes, Law ’04, defies genre with civic themes and fluid musical motifs",
-      "article_authors": "Ava Roberts and Isa Farfan",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/U4KDHL27FRHQDP6CX5XSVQIULQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/02/07/bobuchi-ken-opurum-forbes-30-under-30-carves-the-path-in-sustainable-energy/",
-      "article_title": "Bobuchi Ken-Opurum, Forbes 30 Under 30, carves the path in sustainable energy",
-      "article_authors": "Jamal Baig",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AJ5JJE3GVRE5BIM3U46RKQDHGE.jpg"
-    }
-  ];
+  {
+    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/08/26/columbia-dining-to-take-over-tc-dining-hall-fourth-new-food-hall-since-pandemic/",
+    "article_title": "Columbia Dining to take over TC dining hall, fourth new food hall since pandemic",
+    "article_authors": "Isabella Farfan",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2V3EBZDOA5AE7G2OR55ICIQLAA.jpg"
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2023/08/26/cheap-eats-around-campus-7-morningside-heights-restaurants-serving-meals-under-10/",
+    "article_title": "Cheap eats around campus: 7 Morningside Heights restaurants serving meals under $10",
+    "article_authors": "Irene Madrigal",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AUZKPHCN2NCDXMVO5WA4U2EQSA.jpg"
+  }
+];
 export const city_news_articles = 
 [
   {
@@ -92,10 +56,10 @@ export const opinion_articles = [
   ];
   export const audio_articles = [
     {
-      "article_link": "https://www.columbiaspectator.com/podcasts/2023/02/14/a-spotlight-on-columbias-black-musicians/",
-      "article_title": "A spotlight on Columbia’s Black musicians",
-      "article_authors": "Adrien Wheaton-Schopp ",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XZWHLAMR7RAR7LGO5UIGSDWXXA.JPG"
+      "article_link": "https://www.columbiaspectator.com/podcasts/2023/08/26/lets-talk-finding-community-through-mental-health-discussion/",
+      "article_title": "Let’s talk: Finding community through mental health discussion",
+      "article_authors": "Kelly Warner, Matthew Schwitzer, Christina Li",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7ORMMTLUCJFZVDJRA7EAIXOKHQ.JPG"
     }
   ];
 
@@ -157,22 +121,29 @@ export const opinion_articles = [
   
 
   export const spectrum_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2023/01/30/black-history-month-booklist-and-playlist/",
-      "article_title": "Black History Month booklist and playlist",
-      "article_authors": "Madeline Suindah",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6EPK6VC5E5GMBKDSQYCMGICLJQ.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2022/02/02/black-owned-businesses-to-support-in-west-harlem-and-morningside-heights/",
-      "article_title": "Black-owned businesses to support in West Harlem and Morningside Heights",
-      "article_authors": "Caroline Somers",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RNJFCAVCAFD5TH2QES4LBMXQCQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2022/02/06/identity-based-student-groups-empowering-black-communities-on-campus/",
-      "article_title": "Identity-based student groups empowering Black communities on campus",
-      "article_authors": "Kylie Gall",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XRA2TVKZSZBXZPSUSVRY72SQ24.gif"
-    }
-  ];
+      {
+        "article_link": "https://www.columbiaspectator.com/spectrum/2023/08/27/starting-at-columbia-your-guide-to-nsop/",
+        "article_title": "Starting at Columbia: Your guide to NSOP",
+        "article_authors": "Kayla Pham",
+        "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EQYJPT4ECVAKDDYQKBQ5NEAY4Y.jpg"
+      },
+      {
+        "article_link": "https://www.columbiaspectator.com/spectrum/2023/08/27/planning-your-time-at-columbia/",
+        "article_title": "Planning your time at Columbia",
+        "article_authors": "Emma Melnikov",
+        "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3IR64PIE4BALNAXAYLFHBHL5JY.jpg"
+      },
+      {
+        "article_link": "https://www.columbiaspectator.com/spectrum/2023/08/27/your-guide-to-the-columbia-libraries-depending-on-your-study-needs/",
+        "article_title": "Your guide to the Columbia libraries depending on your study needs",
+        "article_authors": "Madeline Suindah",
+        "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DALVLJOTYNAZXK3NXHEG3PNQHE.jpg"
+      },
+      {
+        "article_link": "https://www.columbiaspectator.com/spectrum/2023/08/27/nsop-ends-in-a-week-what-happens-next/",
+        "article_title": "\"What the first few weeks of Columbia after NSOP are going to look like\nNSOP ends in a week. What happens next?\"",
+        "article_authors": "Anuthmi Waas",
+        "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZFAAUS3FI5HLVNDYOXQHAG2N2Y.jpeg"
+      }
+    ]
+  ;

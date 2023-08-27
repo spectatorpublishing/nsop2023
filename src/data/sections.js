@@ -9,24 +9,12 @@ export const sections = [
         url: "/uni-news",
     },
     {
-        title: "City",
-        url: "/city-news",
-    },
-    {
-        title: "Opinion",
-        url: "/opinion",
-    },
-    {
         title: "A&C",
         url: "/a&c",
     },
     {
         title: "Sports",
         url: "/sports",
-    },
-    {
-        title: "Audio",
-        url: "/audio",
     },
     {
         title: "Spectrum",

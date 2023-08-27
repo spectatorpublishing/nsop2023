@@ -114,7 +114,7 @@ const Section = styled.div`
     font-family: 'Mogra';
     color: white;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.25rem;
     @media only screen and (min-width: 769px){
         width: 30%;
         font-size:1rem;
@@ -122,7 +122,8 @@ const Section = styled.div`
 `;
 
 const Name = styled.div`
-    font-family: "Comic Sans MS";
+    font-size:1.05rem;
+    font-family: 'Comic Neue';
     color: black;
     text-transform: none;
 `;
@@ -144,7 +145,7 @@ const Credits = () => {
                             <br/>
                             {key.map((person, index) => {
                                 return(
-                                    <Name key={index}>{person.staff_name}, <i>{person.title}</i></Name>
+                                    <Name key={index}><b>{person.staff_name}</b>, <i>{person.title}</i></Name>
                                 );
                             })}
                             <br/> <br/>

@@ -164,6 +164,40 @@ export const credits =
           "staff_name": "Matthew Schwitzer",
           "title": "Audio Staff Producer"
         }
-      ]
+      ],
+      "Copy": [
+          {
+            "staff_name": "Ronit Dhulia",
+            "title": "Head Copy Editor"
+          },
+          {
+            "staff_name": "Ainhoa Petri-Hidalgo",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "August Phillips",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "Lanah Wyne",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "Maria Levit",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "Renuka Balakrishnan",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "Sadie Rochman",
+            "title": "Deputy Copy Editor"
+          },
+          {
+            "staff_name": "Yvin Shin",
+            "title": "Deputy Copy Editor"
+          }
+        ]
     }
 ;

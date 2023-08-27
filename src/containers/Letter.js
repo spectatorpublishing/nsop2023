@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LetterWrapper = styled.div`
+    font-family: 'Comic Neue'
     width: 87%;
     background-color: white;
     padding: 2rem;
@@ -39,7 +40,7 @@ const Title = styled.div`
 `;
 
 const Text = styled.div`
-    font-family: "Comic Sans MS";
+    font-family: 'Comic Neue'
     
     @media only screen and (max-width: 767px) {
         font-size: 0.9rem;
