@@ -34,6 +34,10 @@ const VertNav = styled.div`
 `;
 
 const SectionList = styled.div`
+    display:flex;
+    flex-direction: column;
+    height:70%;
+    justify-content:space-between;
     position: absolute;
     top: 2.5rem;
     left: 1.2rem;
