@@ -111,6 +111,7 @@ const ArticleImg = styled.img`
 `
 
 const ArticleContainer = styled.div`
+  font-family: 'Comic Neue';
   z-index:0;
   padding:1rem 8rem;
   display:flex;
@@ -125,7 +126,6 @@ const ArticleContainer = styled.div`
 const BubbleContainer = styled.div`
   z-index:2;
   padding-left: '1rem';
-  font-family: 'Comic Neue'
   font-size:1rem;
   margin-top:13rem;
   width:55%;
@@ -134,22 +134,22 @@ const BubbleContainer = styled.div`
 const ArticleTitle = styled.h1`
   font-size:1rem;
   width:25rem;
-  padding-left:${props => props.bubbleNum == 0 ? '0rem' : 
-                          props.bubbleNum == 1 ? '15rem' :
-                          props.bubbleNum == 2 ? '0rem' :
+  padding-left:${props => props.bubbleNum === 0 ? '0rem' : 
+                          props.bubbleNum === 1 ? '15rem' :
+                          props.bubbleNum === 2 ? '0rem' :
                           '5rem'};      
   @media only screen and (max-width: 1300px) {
     width:21rem;
-    padding-left:${props => props.bubbleNum == 0 ? '0rem' : 
-                          props.bubbleNum == 1 ? '10rem' :
-                          props.bubbleNum == 2 ? '0rem' :
+    padding-left:${props => props.bubbleNum === 0 ? '0rem' : 
+                          props.bubbleNum === 1 ? '10rem' :
+                          props.bubbleNum === 2 ? '0rem' :
                           '10rem'}; 
   } 
   @media only screen and (max-width: 1024px) {
     font-size:0.925rem;
-    padding-left:${props => props.bubbleNum == 0 ? '0rem' : 
-                          props.bubbleNum == 1 ? '10rem' :
-                          props.bubbleNum == 2 ? '0rem' :
+    padding-left:${props => props.bubbleNum === 0 ? '0rem' : 
+                          props.bubbleNum === 1 ? '10rem' :
+                          props.bubbleNum === 2 ? '0rem' :
                           '11.5rem'}; 
   }
   @media only screen and (max-width: 875px) {
@@ -160,20 +160,20 @@ const ArticleTitle = styled.h1`
 const Byline = styled.p`
   font-size:0.75rem;
   width: 15rem;
-  padding-left:${props => props.bubbleNum == 0 ? '15rem' : 
-                          props.bubbleNum == 1 ? '32rem' :
-                          props.bubbleNum == 2 ? '10rem' :
+  padding-left:${props => props.bubbleNum === 0 ? '15rem' : 
+                          props.bubbleNum === 1 ? '32rem' :
+                          props.bubbleNum === 2 ? '10rem' :
                           '20rem'}; 
   @media only screen and (max-width: 1300px) {
-    padding-left:${props => props.bubbleNum == 0 ? '9rem' : 
-                          props.bubbleNum == 1 ? '25rem' :
-                          props.bubbleNum == 2 ? '5rem' :
+    padding-left:${props => props.bubbleNum === 0 ? '9rem' : 
+                          props.bubbleNum === 1 ? '25rem' :
+                          props.bubbleNum === 2 ? '5rem' :
                           '18rem'}; 
   } 
   @media only screen and (max-width: 1024px) {
-    padding-left:${props => props.bubbleNum == 0 ? '8rem' : 
-                          props.bubbleNum == 1 ? '22rem' :
-                          props.bubbleNum == 2 ? '8rem' :
+    padding-left:${props => props.bubbleNum === 0 ? '8rem' : 
+                          props.bubbleNum === 1 ? '22rem' :
+                          props.bubbleNum === 2 ? '8rem' :
                           '22rem'};                        
   }
   @media only screen and (max-width: 875px) {
@@ -184,38 +184,38 @@ const Byline = styled.p`
 const Bubble = styled.img`
   z-index:1;
   position:absolute;
-  margin-top: ${props => props.bubbleNum == 2 ? '11rem' : '10rem'};
-  left:${props => props.bubbleNum == 0 ? '20rem' : 
-                    props.bubbleNum == 1 ? '18rem' :
-                    props.bubbleNum == 2 ? '32rem' :
+  margin-top: ${props => props.bubbleNum === 2 ? '11rem' : '10rem'};
+  left:${props => props.bubbleNum === 0 ? '20rem' : 
+                    props.bubbleNum === 1 ? '18rem' :
+                    props.bubbleNum === 2 ? '32rem' :
                     '0rem'};                 
-  width:${props => props.bubbleNum == 0 ? '52.5rem' : 
-                    props.bubbleNum == 1 ? '42rem' :
-                    props.bubbleNum == 2 ? '40rem' :
+  width:${props => props.bubbleNum === 0 ? '52.5rem' : 
+                    props.bubbleNum === 1 ? '42rem' :
+                    props.bubbleNum === 2 ? '40rem' :
                     '48rem'}; 
-  height:${props => props.bubbleNum == 0 ? '15rem' : 
-                    props.bubbleNum == 1 ? '15rem' :
-                    props.bubbleNum == 2 ? '15rem' :
+  height:${props => props.bubbleNum === 0 ? '15rem' : 
+                    props.bubbleNum === 1 ? '15rem' :
+                    props.bubbleNum === 2 ? '15rem' :
                     '20rem'}; 
 
   @media only screen and (max-width: 1300px) {
-    left:${props => props.bubbleNum == 0 ? '10rem' : 
-                    props.bubbleNum == 1 ? '8rem' :
-                    props.bubbleNum == 2 ? '22rem' :
+    left:${props => props.bubbleNum === 0 ? '10rem' : 
+                    props.bubbleNum === 1 ? '8rem' :
+                    props.bubbleNum === 2 ? '22rem' :
                     '0rem'};                 
-    width:${props => props.bubbleNum == 0 ? '45rem' : 
-                      props.bubbleNum == 1 ? '35rem' :
-                      props.bubbleNum == 2 ? '32rem' :
+    width:${props => props.bubbleNum === 0 ? '45rem' : 
+                      props.bubbleNum === 1 ? '35rem' :
+                      props.bubbleNum === 2 ? '32rem' :
                       '40rem'}; 
   }
   @media only screen and (max-width: 1024px) {
-    left:${props => props.bubbleNum == 0 ? '13rem' : 
-                    props.bubbleNum == 1 ? '3rem' :
-                    props.bubbleNum == 2 ? '22rem' :
+    left:${props => props.bubbleNum === 0 ? '13rem' : 
+                    props.bubbleNum === 1 ? '3rem' :
+                    props.bubbleNum === 2 ? '22rem' :
                     '0rem'};                 
-    width:${props => props.bubbleNum == 0 ? '40rem' : 
-                      props.bubbleNum == 1 ? '32rem' :
-                      props.bubbleNum == 2 ? '29rem' :
+    width:${props => props.bubbleNum === 0 ? '40rem' : 
+                      props.bubbleNum === 1 ? '32rem' :
+                      props.bubbleNum === 2 ? '29rem' :
                       '32rem'};
   } 
   @media only screen and (max-width: 875px) {
@@ -255,6 +255,9 @@ const Section = ({id, header, articles}) => {
         return bubble2;
       case 3:
         return bubble3;
+
+      default:
+        return bubble0;
     }
   }
 
@@ -264,6 +267,9 @@ const Section = ({id, header, articles}) => {
         return "row";
       case 1:
         return "row-reverse";
+      
+      default:
+        return "row";
     }
   }
   
@@ -335,7 +341,6 @@ const InnerSectionMobile = styled.div`
   }
 `
 const ArticleContainerMobile = styled.div`
-font-family: "Comic Sans MS";
   position:relative;
   top:-2rem;
   @media only screen and (min-width: 875px) {
@@ -415,7 +420,7 @@ const ArticleTitleMobile = styled.h1`
   }
   @media only screen and (max-width: 375px) {
     font-size:0.775rem;
-    top: ${props => props.bubbleNum === 0 ? "120px" : 
+    top: ${props => props.bubbleNum === 0 ? "130px" : 
                       props.bubbleNum === 1 ? "120px" : 
                       props.bubbleNum === 2 ? "100px" : "140px"};
     left: ${props => props.bubbleNum === 0 ? "100px" : 
@@ -437,13 +442,13 @@ const ArticleImgMobile = styled.img`
 `
 const BubbleMobile = styled.img`
   width:90%;
-  height: ${props => props.bubbleNum == 3 ? "23rem" : "18rem"};
+  height: ${props => props.bubbleNum === 3 ? "23rem" : "18rem"};
   position:relative;
-  top:${props => props.bubbleNum == 3 ? "25rem" : "20rem"};
+  top:${props => props.bubbleNum === 3 ? "25rem" : "20rem"};
   z-index:100;
   @media only screen and (min-width: 550px) {
     width:33rem;
-    top:${props => props.bubbleNum == 3 ? "28rem" : "22rem"};
+    top:${props => props.bubbleNum === 3 ? "28rem" : "22rem"};
   }
   @media only screen and (min-width: 875px) {
     display:none;
