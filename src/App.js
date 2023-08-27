@@ -7,13 +7,14 @@ import {
   ac_articles,
   spectrum_articles 
 } from './data/articles';
-
+import ScrollToTop from './functions/ScrollToTop'
 import Home from './containers/Home';
 
 const App = () => {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/uni-news" element={<Section id="uni-news" header="University News" articles={university_news_articles}/>} />

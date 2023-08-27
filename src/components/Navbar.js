@@ -7,6 +7,8 @@ import { NavHashLink } from 'react-router-hash-link';
 const NavWrapper = styled.div`
    z-index: 1000;
    position: sticky;
+   width: min-content;
+   left: 100%;
    margin-top: -20rem;
    a {
         text-decoration: none;

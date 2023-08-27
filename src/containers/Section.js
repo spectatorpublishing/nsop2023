@@ -278,52 +278,40 @@ const Section = ({id, header, articles}) => {
       <SectionItems>
         {articles.map((article,index)=>{
           return(
-          <InnerSection bubbleNum = {index}>
-            <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
-            <Bubble src={selectImage(index)} bubbleNum = {index%4}/>
-            </a>
-            <ArticleContainer key = {index} direction = {selectDirection(index)}>
-            <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
-              <ArticleImg src = {article.image_url} />
-              </a>
-              <BubbleContainer>
-                <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
-                <ArticleTitle bubbleNum = {index%4}>
+          <a href= {article.article_link} style ={{ cursor: "pointer", textDecoration: "none", color: "black" }}>
+            <InnerSection bubbleNum = {index}>
+              <Bubble src={selectImage(index)} bubbleNum = {index%4}/>
+              <ArticleContainer key = {index} direction = {selectDirection(index)}>
+                <ArticleImg src = {article.image_url} />
+                <BubbleContainer>
+                  <ArticleTitle bubbleNum = {index%4}>
                   {article.article_title}
-                </ArticleTitle>
-                </a>
-                <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
-                <Byline bubbleNum = {index%4}>By: {article.article_authors}</Byline>
-                </a>
-              </BubbleContainer>
-            </ArticleContainer>
-        </InnerSection>
+                  </ArticleTitle>
+                  <Byline bubbleNum = {index%4}>By: {article.article_authors}</Byline>
+                </BubbleContainer>
+              </ArticleContainer>
+          </InnerSection>
+          </a>
           )
         })}
       </SectionItems>
       <SectionItemsMobile>
         {articles.map((article,index)=>{
           return(
+          <a href= {article.article_link} style= {{ cursor: "pointer", textDecoration: "none", color: "black" }}>
           <InnerSectionMobile bubbleNum = {index}>
-            <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
             <BubbleMobile src={selectImage(index)} bubbleNum = {index%4}/>
-            </a>
             <ArticleContainerMobile key = {index} direction = {selectDirection(index)}>
-            <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
               <ArticleImgMobile src = {article.image_url} />
-              </a>
               <BubbleContainerMobile>
-              <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
                 <ArticleTitleMobile bubbleNum = {index%4}>
                   {article.article_title}
                 </ArticleTitleMobile>
-                </a>
-                <a href = {article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
                 <BylineMobile bubbleNum = {index%4}>By: {article.article_authors}</BylineMobile>
-                </a>
               </BubbleContainerMobile>
             </ArticleContainerMobile>
         </InnerSectionMobile>
+        </a>
           )
         })}
       </SectionItemsMobile>      
@@ -379,6 +367,15 @@ const BylineMobile = styled.div`
                       props.bubbleNum === 1 ? "100px" : 
                       props.bubbleNum === 2 ? "100px" : "90px"};
   } 
+  @media only screen and (max-width: 375px) {
+    font-size:0.775rem;
+    top: ${props => props.bubbleNum === 0 ? "225px" : 
+                      props.bubbleNum === 1 ? "220px" : 
+                      props.bubbleNum === 2 ? "200px" : "200px"};
+    left: ${props => props.bubbleNum === 0 ? "120px" : 
+                      props.bubbleNum === 1 ? "100px" : 
+                      props.bubbleNum === 2 ? "100px" : "90px"};
+  }
   @media only screen and (min-width: 875px) {
     display:none;
   }
@@ -412,6 +409,15 @@ const ArticleTitleMobile = styled.h1`
                       props.bubbleNum === 1 ? "120px" : 
                       props.bubbleNum === 2 ? "100px" : "140px"};
     left: ${props => props.bubbleNum === 0 ? "120px" : 
+                      props.bubbleNum === 1 ? "50px" : 
+                      props.bubbleNum === 2 ? "60px" : "90px"};
+  }
+  @media only screen and (max-width: 375px) {
+    font-size:0.775rem;
+    top: ${props => props.bubbleNum === 0 ? "130px" : 
+                      props.bubbleNum === 1 ? "120px" : 
+                      props.bubbleNum === 2 ? "100px" : "140px"};
+    left: ${props => props.bubbleNum === 0 ? "100px" : 
                       props.bubbleNum === 1 ? "50px" : 
                       props.bubbleNum === 2 ? "60px" : "90px"};
   }
