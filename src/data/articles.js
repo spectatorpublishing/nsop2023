@@ -141,7 +141,7 @@ export const opinion_articles = [
       },
       {
         "article_link": "https://www.columbiaspectator.com/spectrum/2023/08/27/nsop-ends-in-a-week-what-happens-next/",
-        "article_title": "\"What the first few weeks of Columbia after NSOP are going to look like\nNSOP ends in a week. What happens next?\"",
+        "article_title": "NSOP ends in a week. What happens next?",
         "article_authors": "Anuthmi Waas",
         "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZFAAUS3FI5HLVNDYOXQHAG2N2Y.jpeg"
       }

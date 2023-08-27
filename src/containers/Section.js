@@ -279,14 +279,22 @@ const Section = ({id, header, articles}) => {
         {articles.map((article,index)=>{
           return(
           <InnerSection bubbleNum = {index}>
-            <Bubble src={selectImage(index)} bubbleNum = {index%4}/>
+            <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
+              <Bubble src={selectImage(index)} bubbleNum = {index%4}/>
+            </a>
             <ArticleContainer key = {index} direction = {selectDirection(index)}>
+            <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
               <ArticleImg src = {article.image_url} />
+            </a>
               <BubbleContainer>
+              <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
                 <ArticleTitle bubbleNum = {index%4}>
-                  {article.article_title}
+                {article.article_title}
                 </ArticleTitle>
+              </a>
+              <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
                 <Byline bubbleNum = {index%4}>By: {article.article_authors}</Byline>
+              </a>
               </BubbleContainer>
             </ArticleContainer>
         </InnerSection>
@@ -297,14 +305,22 @@ const Section = ({id, header, articles}) => {
         {articles.map((article,index)=>{
           return(
           <InnerSectionMobile bubbleNum = {index}>
-            <BubbleMobile src={selectImage(index)} bubbleNum = {index%4}/>
+            <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
+              <BubbleMobile src={selectImage(index)} bubbleNum = {index%4}/>
+            </a>
             <ArticleContainerMobile key = {index} direction = {selectDirection(index)}>
-              <ArticleImgMobile src = {article.image_url} />
+              <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
+                <ArticleImgMobile src = {article.image_url} />
+              </a>
               <BubbleContainerMobile>
+              <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
                 <ArticleTitleMobile bubbleNum = {index%4}>
-                  {article.article_title}
+                {article.article_title}
                 </ArticleTitleMobile>
-                <BylineMobile bubbleNum = {index%4}>By: {article.article_authors}</BylineMobile>
+                </a>
+                <a href ={article.article_link} style= {{ textDecoration: "none", color: "black", cursor: "pointer"}}>
+                  <BylineMobile bubbleNum = {index%4}>By: {article.article_authors}</BylineMobile>
+                </a>
               </BubbleContainerMobile>
             </ArticleContainerMobile>
         </InnerSectionMobile>
