@@ -103,32 +103,6 @@ export const credits =
           "title": "Deputy Sports Editor"
         }
       ],
-      "Illustrations": [
-        {
-          "staff_name": "Ji Yoon Sim",
-          "title": "Illustrations Editor"
-        },
-        {
-          "staff_name": "Kelsea Petersen",
-          "title": "Deputy Illustrations Editor"
-        },
-        {
-          "staff_name": "Cassie Wang",
-          "title": "Deputy Illustrations Editor"
-        },
-        {
-          "staff_name": "Olya Sukonrat",
-          "title": "Deputy Illustrations Editor"
-        },
-        {
-          "staff_name": "Julian Michaud",
-          "title": "Senior Staff Illustrator"
-        },
-        {
-          "staff_name": "Ren Huang",
-          "title": "Senior Staff Illustrator"
-        }
-      ],
       "Spectrum": [
         {
           "staff_name": "Emma Melnikov",
@@ -198,6 +172,46 @@ export const credits =
             "staff_name": "Yvin Shin",
             "title": "Deputy Copy Editor"
           }
-        ]
+        ],
+      "Arts and Culture" : [
+        {
+          "staff_name": "Isabella Farfan",
+          "title": "Editor"
+        },
+        {
+          "staff_name": "Irene Madrigal",
+          "title": "Deputy Editor"
+        }
+      ],
+      "Illustrations" : [
+        {
+          "staff_name": "Ji Yoon Sim",
+          "title": "Illustrations Editor"
+        },
+        {
+          "staff_name": "Kelsea Petersen",
+          "title": "Deputy Illustrations Editor"
+        },
+        {
+          "staff_name": "Cassie Wang",
+          "title": "Deputy Illustrations Editor"
+        },
+        {
+          "staff_name": "Olya Sukonrat",
+          "title": "Deputy Illustrations Editor"
+        },
+        {
+          "staff_name": "Macy Sinreich",
+          "title": "Deputy Illustrations Editor"
+        },
+        {
+          "staff_name": "Ren Huang",
+          "title": "Columbia Daily Spectator"
+        },
+        {
+          "staff_name": "Julian Michaud",
+          "title": "Senior Staff Illustrator"
+        }
+      ]
     }
 ;
