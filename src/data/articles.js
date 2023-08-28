@@ -36,22 +36,10 @@ export const city_news_articles =
 ];
 export const opinion_articles = [
     {
-      "article_link": "https://www.columbiaspectator.com/opinion/2023/02/07/new-york-is-just-as-racist-as-texas/",
-      "article_title": "New York is just as racist as Texas",
-      "article_authors": "Hayden Flowers",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3ZLRRJKFGJGB5P6FQEIA7APVLE.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2023/02/13/remaining-silent-about-black-oppression-is-an-act-of-violence/",
-      "article_title": "Remaining silent on Black oppression is an act of violence",
-      "article_authors": "Colin Roedl",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L2TLMWDNYJET7KROSMEYZMX664.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2023/02/13/from-a-blm-fist-to-two-fingers/",
-      "article_title": "From BLM fist to two fingers",
-      "article_authors": "Ariel Gilbert",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EDIWE2FUBRHWXIQ32QYIA7DUJE.jpg"
+      "article_link": "https://www.columbiaspectator.com/opinion/2023/08/27/from-a-refugee-camp-in-nepal-to-columbia-confronting-the-caste-system-of-higher-education/",
+      "article_title": "From a refugee camp in Nepal to Columbia: Confronting the caste system of higher education",
+      "article_authors": "Lok Darjee",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZCL6IEQNEBEWNNRU24KFQFY7ZU.jpg"
     }
   ];
   export const audio_articles = [

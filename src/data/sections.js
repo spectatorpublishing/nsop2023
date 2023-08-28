@@ -13,6 +13,10 @@ export const sections = [
         url: "/a&c",
     },
     {
+        title: "Opinion",
+        url: "/opinion",
+    },
+    {
         title: "Sports",
         url: "/sports",
     },

@@ -4,6 +4,7 @@ import Section from './containers/Section';
 import { 
   university_news_articles, 
   sports_articles, 
+  opinion_articles,
   ac_articles,
   spectrum_articles 
 } from './data/articles';
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/uni-news" element={<Section id="uni-news" header="University News" articles={university_news_articles}/>} />
         <Route path="/a&c" element={<Section id="a&c" header="Arts and Culture" articles={ac_articles} />} />
+        <Route path="/opinion" element={<Section id="opinion" header="Opinion" articles={opinion_articles} />} />
         <Route path="/sports" element={<Section id="sports" header="Sports" articles={sports_articles} />} />
         <Route path="/spectrum" element={<Section id="spectrum" header="Spectrum" articles={spectrum_articles} />} />
       </Routes>
