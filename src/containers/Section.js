@@ -375,7 +375,7 @@ const BylineMobile = styled.div`
   } 
   @media only screen and (max-width: 390px) {
     font-size:0.775rem;
-    top: ${props => props.bubbleNum === 0 ? "225px" : 
+    top: ${props => props.bubbleNum === 0 ? "245px" : 
                       props.bubbleNum === 1 ? "220px" : 
                       props.bubbleNum === 2 ? "200px" : "200px"};
     left: ${props => props.bubbleNum === 0 ? "120px" : 
@@ -420,7 +420,7 @@ const ArticleTitleMobile = styled.h1`
   }
   @media only screen and (max-width: 375px) {
     font-size:0.775rem;
-    top: ${props => props.bubbleNum === 0 ? "130px" : 
+    top: ${props => props.bubbleNum === 0 ? "140px" : 
                       props.bubbleNum === 1 ? "120px" : 
                       props.bubbleNum === 2 ? "100px" : "140px"};
     left: ${props => props.bubbleNum === 0 ? "100px" : 
